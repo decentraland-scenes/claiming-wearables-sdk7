@@ -11,7 +11,7 @@ const TEST_CAMPAIGN_KEY = 'eyJpZCI6IjY2NThmOGRiLWZjNGItNDQyMC05NTUzLWYyZDQxODRjZ
 
 
 export const ClaimConfig = {
-	rewardsServer: 'https://rewards.decentraland.org',
+	rewardsServer: CONFIG.CONFIG_CLAIM_TESTING_ENABLED ? 'https://rewards.decentraland.zone' : 'https://rewards.decentraland.org',
 	campaign: {
 		CAMPAIGN_TEST: {
 			campaign: CONFIG.CONFIG_CLAIM_TESTING_ENABLED ? TEST_CAMPAIGN_ID : 'PROVIDE_CAMPAIGN_ID_HERE',
